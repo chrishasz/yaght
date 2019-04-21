@@ -62,15 +62,8 @@ minima:
 # this and add the path to the pages in order as they should show up
 # header_pages:
 #   - name : about.md
-#   - name : page2.md
-#   - name : page1.md
-#   - name : page3.md
-#   - name : spgo.md
-#     title : SPGo
-#     url : /spgo
-#   - name : glob2caml.md
-#     title : Glob2Caml
-#     url : /glob2caml
+#     title : About 
+#     url : about.md
 
 #yaght
 yaght:
@@ -84,7 +77,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: yaght
+# theme: yaght
 
 plugins:
  - jekyll-feed

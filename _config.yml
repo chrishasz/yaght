@@ -1,12 +1,32 @@
+#SEO Tagging [jekyll-seo-tag]
 title: Your awesome title
 author: GitHub User
 email: your-email@domain.com
-description: > # this means to ignore newlines until "show_exerpts:"
+description: > # this means to ignore newlines until "twitter_username:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
-show_excerpts: false # set to true to show excerpts on the homepage
+twitter:
+  username: jekyllrb
+  card: summary
+
+#Social [jekyll-seo-tag]
+# social:
+#   name: jekyll
+#   links:
+#     - https://twitter.com/jekyllrb
+#     - https://www.facebook.com/jekyllrb
+#     - https://www.linkedin.com/in/jekyllrb
+#     - https://plus.google.com/+jekyll
+#     - https://github.com/jekyll
+#     - https://keybase.io/jekyllrb
+
+#blog features
+show_excerpts: true # set to true to show excerpts on the homepage
+
+#Google Analytis
+google_analytics: UA-NNNNNNNN-N
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -22,7 +42,7 @@ minima:
     # facebook: jekyll
     # flickr:   jekyll
     # instagram: jekyll
-    # linkedin: jekyll
+    linkedin: jekyll
     # pinterest: jekyll
     # youtube: jekyll
     # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
@@ -40,12 +60,43 @@ minima:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
+# header_pages:
+#   - name : about.md
+#   - name : page2.md
+#   - name : page1.md
+#   - name : page3.md
+#   - name : spgo.md
+#     title : SPGo
+#     url : /spgo
+#   - name : glob2caml.md
+#     title : Glob2Caml
+#     url : /glob2caml
+
+#yaght
+yaght:
+  gravatar-hash : 
+  avatar : /assets/images/favicon.png
+
+
+
+# technical settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: minima
+theme: yaght
 
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+
+
+# sample schema for toc file
+# toc filename: \_data\navigation.yml
+# accessed via:  site.data.navigation.toc   
+# toc:
+#   - title: General
+#   - url: /site/general
+#     subfolderItems:
+#       - title: Configuration Options
+#         url: /site/general/config-options

@@ -1,18 +1,47 @@
 ---
 layout: default
+hideHeaderDesktop : true
+hideFooter : true
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+<aside class="sidebar" role="banner">
+  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign page_paths = site.header_pages | default: default_paths -%}
+  {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+  <a class="site-title img-circle" rel="author" href="{{ "/" | relative_url }}">
+    {%- if site.yaght.avatar -%}
+      <img src="{{ site.yaght.avatar | relative_url }}" class="img-circle" />
+    {%- endif -%}
+    {%- if site.yaght.gravatar-hash -%}
+		  <img src="//www.gravatar.com/avatar/{{site.yaght.gravatar-hash}}?s=150" class="img-circle" />
+    {%- endif -%}
+	</a>
+  <h2 class="sidebar-heading">{{ site.title | escape }}</h2>
+  <p>{{- site.description | escape -}}</p>
+  {%- if titles_size > 0 -%}
+    <div class="left-nav">
+      <ul>
+        {%- for path in page_paths -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.title -%}
+            <li class="page-link"> <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </div>
   {%- endif -%}
+  <div class="social-links">
+    {%- include social.html -%}
+  </div>
+</aside>
+
+<div class="home">
 
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- for post in site.posts limit:3 -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>

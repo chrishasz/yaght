@@ -1,0 +1,140 @@
+.site-header {
+  border-top: none;
+}
+
+
+body {
+  border-top: 15px solid $brand-color;
+  min-height: 100%;
+
+  //font-family: "Quicksand", Arial, sans-serif;
+}
+
+.page-content{
+  padding: 0;
+}
+
+.site-header{
+  background-color: $grey-color-light;
+  line-height: 75px;
+
+  label[for="nav-trigger"] {
+    padding-top: 20px;
+  }
+
+  .site-nav{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    position: static;
+    text-align: left;
+    top: 18px;
+
+    .page-link{
+      margin-left: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  .site-image{
+    padding-right: 35px;
+    float: left;
+
+    img{
+      height: 50px;
+      width: 50px;
+    }
+  }
+  
+  .trigger > a{
+    border-top: 1px solid $grey-color;
+  }
+}
+
+aside {
+  background-color: $grey-color-light;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 30px 20px 20px 20px;
+  position: fixed;
+  top: 15px;
+  width: 260px;
+
+  ul{
+    list-style-type: none;
+    margin-left: 0;
+
+    li{
+      padding-top: 10px;
+      text-align: center;
+
+      a{
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .site-title{
+    display: block;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    width: 150px;
+  }
+
+  .sidebar-heading{
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .social-links{
+    margin-top: 30px;
+  }
+}
+
+/**
+ * left-nav
+ */
+#left-nav ~ .post{
+  display: table-cell;
+} 
+
+ #left-nav{
+  display:table-cell;
+  width: 350px;
+
+  h3{
+    margin-left: 20px;
+  }
+
+  ul{
+    list-style: none;
+  
+    li{
+      padding-bottom: 15px;
+    }
+  }
+
+  @include media-query($on-palm) {
+    display: none;
+  }
+ }
+
+.home{
+  background-color: #fff;
+  margin-left: 320px;
+}
+
+/************************ RESPOND **********************/
+@include media-query($on-palm) {
+  aside{
+      display: none;
+  }
+
+  .home{
+    margin-left: 0;
+  }
+
+  .site-header{
+    display:block;
+  }
+}

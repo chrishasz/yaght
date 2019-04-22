@@ -7,7 +7,6 @@ hideFooter : true
 <aside class="sidebar" role="banner">
   {%- assign default_paths = site.pages | map: "path" -%}
   {%- assign page_paths = site.header_pages | default: default_paths -%}
-  {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
   <a class="site-title img-circle" rel="author" href="{{ "/" | relative_url }}">
     {%- if site.yaght.avatar -%}
       <img src="{{ site.yaght.avatar | relative_url }}" class="img-circle" />
@@ -21,7 +20,7 @@ hideFooter : true
     <div class="left-nav">
       <ul>
         {%- for path in page_paths -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- assign my_page = site.pages | where: "path", path.name | first | default: path -%}
           {%- if my_page.title -%}
             <li class="page-link"> <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
           {%- endif -%}

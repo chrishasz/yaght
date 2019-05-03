@@ -91,3 +91,4 @@ plugins:
 #     subfolderItems:
 #       - title: Configuration Options
 #         url: /site/general/config-options
+exclude: [vendor]

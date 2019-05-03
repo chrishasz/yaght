@@ -6,12 +6,7 @@
     {%- assign titles_size = default_paths | size -%}
 
     <a class="site-image img-circle" rel="author" href="{{ '/' | relative_url }}">
-      {%- if site.yaght.avatar -%}
-        <img src="{{ site.yaght.avatar | relative_url }}" class="img-circle" />
-      {%- endif -%}
-      {%- if site.yaght.gravatar-hash -%}
-        <img src="//www.gravatar.com/avatar/{{site.yaght.gravatar-hash}}?s=150" class="img-circle" />
-      {%- endif -%}
+      {% avatar {{site.minima.social_links.github]}} %}
     </a>
     <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
 
@@ -29,7 +24,7 @@
         <div class="trigger">
           {%- for path in default_paths -%}
             {%- assign my_page = site.pages | where: "path", path.name | first | default: path -%}
-            
+
             {%- if my_page.title -%}
               <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}

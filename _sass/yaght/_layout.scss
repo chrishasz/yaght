@@ -1,11 +1,6 @@
-.site-header {
-  border-top: none;
-}
-
-
 body {
   border-top: 15px solid $brand-color;
-  min-height: 100%;
+  min-height: 98vh;
 
   //font-family: "Quicksand", Arial, sans-serif;
 }
@@ -16,6 +11,7 @@ body {
 
 .site-header{
   background-color: $grey-color-light;
+  border-top: none;
   line-height: 75px;
 
   label[for="nav-trigger"] {
@@ -44,7 +40,7 @@ body {
       width: 50px;
     }
   }
-  
+
   .trigger > a{
     border-top: 1px solid $grey-color;
   }
@@ -96,7 +92,7 @@ aside {
  */
 #left-nav ~ .post{
   display: table-cell;
-} 
+}
 
  #left-nav{
   display:table-cell;
@@ -108,7 +104,7 @@ aside {
 
   ul{
     list-style: none;
-  
+
     li{
       padding-bottom: 15px;
     }

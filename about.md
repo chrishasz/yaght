@@ -8,7 +8,7 @@ This is the yaght theme for Jekyll, a Github-friendly personal template for deve
 
 You can find the source code for yaght at GitHub:
 [chrishasz](https://github.com/chrishasz) /
-[minima](https://github.com/chrishasz/yaght)
+[yaght](https://github.com/chrishasz/yaght)
 
 You can find the source code for Minima at GitHub:
 [jekyll][jekyll-organization] /

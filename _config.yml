@@ -17,7 +17,7 @@ twitter:
 #   links:
 #     - https://twitter.com/jekyllrb
 #     - https://www.facebook.com/jekyllrb
-#     - https://www.linkedin.com/in/jekyllrb
+#     - https://www.linkedin.com/in/parkr
 #     - https://plus.google.com/+jekyll
 #     - https://github.com/jekyll
 #     - https://keybase.io/jekyllrb
@@ -42,7 +42,7 @@ minima:
     # facebook: jekyll
     # flickr:   jekyll
     # instagram: jekyll
-    linkedin: jekyll
+    linkedin: parkr
     # pinterest: jekyll
     # youtube: jekyll
     # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
@@ -60,16 +60,13 @@ minima:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-# header_pages:
-#   - name : about.md
-#     title : About 
-#     url : about.md
-
-#yaght
-yaght:
-  gravatar-hash : 
-  avatar : /assets/images/favicon.png
-
+header_pages:
+  - name : about.md
+    title : About Page
+    url : about.md
+  - name : about2.md
+    title : About Page 2
+    url : /about2
 
 
 # technical settings
@@ -80,13 +77,14 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # theme: yaght
 
 plugins:
+ - jekyll-avatar
  - jekyll-feed
  - jekyll-seo-tag
 
 
 # sample schema for toc file
 # toc filename: \_data\navigation.yml
-# accessed via:  site.data.navigation.toc   
+# accessed via:  site.data.navigation.toc
 # toc:
 #   - title: General
 #   - url: /site/general

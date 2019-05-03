@@ -8,12 +8,7 @@ hideFooter : true
   {%- assign default_paths = site.pages | map: "path" -%}
   {%- assign page_paths = site.header_pages | default: default_paths -%}
   <a class="site-title img-circle" rel="author" href="{{ "/" | relative_url }}">
-    {%- if site.yaght.avatar -%}
-      <img src="{{ site.yaght.avatar | relative_url }}" class="img-circle" />
-    {%- endif -%}
-    {%- if site.yaght.gravatar-hash -%}
-		  <img src="//www.gravatar.com/avatar/{{site.yaght.gravatar-hash}}?s=150" class="img-circle" />
-    {%- endif -%}
+    {% avatar {{site.minima.social_links.github]}} size=150 %}
 	</a>
   <h2 class="sidebar-heading">{{ site.title | escape }}</h2>
   <p>{{- site.description | escape -}}</p>

@@ -1,3 +1,11 @@
+# yaght
+
+*Yet another Github Template* is a Github-friendly personal Jekyll theme for developers, based on the default [minima](https://github.com/jekyll/minima) theme.
+
+
+## plugins
+- [jekyll-avatar](https://github.com/benbalter/jekyll-avatar)
+
 # minima
 
 *Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.

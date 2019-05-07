@@ -62,17 +62,17 @@ minima:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-header_pages:
-  - name : about.md
-    title : About Page
-    url : about.md
-  - name : about2.md
-    title : About Page 2
-    url : /about2
+# header_pages:
+#   - name : about.md
+#     title : About Page
+#     url : about.md
+#   - name : about2.md
+#     title : About Page 2
+#     url : /about2
 
 
 # technical settings
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "yaght" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings

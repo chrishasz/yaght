@@ -1,0 +1,27 @@
+<aside class="sidebar" role="banner">
+  {%- assign default_paths = site.header_pages | default: site.pages -%}
+  {%- assign titles_size = default_paths | size -%}
+
+  <a class="site-title img-circle" rel="author" href="{{ '/' | relative_url }}">
+    {% avatar {{site.minima.social_links.github]}} size=150 %}
+  </a>
+  <h2 class="sidebar-heading">{{ site.title | escape }}</h2>
+  <p>{{- site.description | escape -}}</p>
+  <div class="left-nav">
+
+    {{page_paths}}
+
+    <ul>
+      {%- for path in default_paths -%}
+        {%- assign my_page = site.pages | where: "path", path.name | first | default: path -%}
+
+        {%- if my_page.title -%}
+          <li class="page-link"> <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+  <div class="social-links">
+    {%- include social.html -%}
+  </div>
+</aside>

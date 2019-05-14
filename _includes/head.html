@@ -8,10 +8,9 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
-  {%- if site.favicon  != true -%}
-    <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
-  {%- endif -%}
   {%- if site.favicon -%}
-    <link rel="icon" href="{{ site.favicon | relative_url }}">
+    <link rel="icon" href="{{ site.favicon }}">
+  {%- else -%}
+    <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
   {%- endif -%}
 </head>

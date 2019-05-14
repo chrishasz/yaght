@@ -8,7 +8,6 @@ description: > # this means to ignore newlines until "twitter_username:"
   Google search results) and in your feed.xml site description.
 
 # favicon: /favicon.ico
-# favicon: /asdfasdfasfd.ico
 
 twitter:
   username: jekyllrb

@@ -72,7 +72,7 @@ minima:
 
 
 # technical settings
-baseurl: "yaght" # the subpath of your site, e.g. /blog
+baseurl: "" #"yaght" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
@@ -82,6 +82,7 @@ plugins:
  - jekyll-avatar
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-octicons
 
 
 # sample schema for toc file

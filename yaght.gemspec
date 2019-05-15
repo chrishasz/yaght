@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-feed", "~> 0.9"
   spec.add_runtime_dependency "jekyll-avatar", "~> 0.6"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.1"
+  spec.add_runtime_dependency "jekyll-octicons", "~> 8.5"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"

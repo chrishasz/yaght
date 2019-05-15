@@ -1,3 +1,9 @@
+---
+layout: page
+title: Changelog
+permalink: /changelog/
+---
+
 # Changelog
 All notable changes to this project will be documented in this file.
 

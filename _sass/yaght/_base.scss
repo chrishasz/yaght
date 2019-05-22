@@ -1,25 +1,38 @@
 a {
+  color: $anchor-color;
+
   &:visited {
-    color: darken($brand-color, 15%);
+    color: lighten($anchor-color, 5%);
   }
 
   &:hover {
-    color: $text-color;
+    color: lighten($anchor-color, 25%);;
     text-decoration: none;
+  }
+}
+
+h1, h2, h3, h4 {
+  color: $brand-color;
+  a {
+    color: $brand-color;
+    &:visited {
+      color: $brand-color;
+
+    }
   }
 }
 
 /**
  * Videos
  */
-.youtubePlayer{
+.youTubePlayer {
   position:relative;
   width:100%;
   height:0px;
   margin: 0 auto;
   padding-bottom:56.25%;
 
-  iframe{
+  iframe {
     position:absolute;
     left:0;
     top:0;
@@ -31,6 +44,31 @@ a {
 /**
  * UTILITY
  */
+ .button{
+   border-radius: 8px;
+   display: block;
+   height: 25px;
+   margin: 0 auto;
+   text-align: center;
+   width: 150px;
+ }
+
+ .button.medium{
+   height: 35px;
+   padding-top: 10px;
+   width: 200;
+ }
+
+ .button.large{
+  height: 45px;
+  padding-top: 15px;
+  width: 300;
+}
+
+.circle{
+  border-radius: 50%;
+}
+
 .img-circle {
   img{
     border-radius: 50%;

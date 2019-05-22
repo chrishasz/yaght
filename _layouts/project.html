@@ -2,13 +2,31 @@
 layout: default
 ---
 
-<article class="post">
+<article class="project">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
+  <header class="project-header">
+    <h1 class="project-title">{{ page.title | escape }}</h1>
   </header>
 
-  <div class="post-content">
+  <div class="project-details">
+    <div class="circle">
+      <a href="{{site.github.repository_url}}" target="_blank">
+        {% octicon code height:50 class:"right left" aria-label:Code %}
+      </a>
+    </div>
+    <div class="circle">
+      <a href="{{site.github.issues_url}}" target="_blank">
+        {% octicon issue-opened height:50 class:"right left" aria-label:Issues %}
+      </a>
+    </div>
+    <div class="circle">
+      <a href="{{site.github.latest_release}}" target="_blank">
+        {% octicon tag height:52 class:"right left" aria-label:Release %}
+      </a>
+    </div>
+  </div>
+
+  <div class="project-content">
     {{ content }}
   </div>
 

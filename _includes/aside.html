@@ -7,10 +7,7 @@
   </a>
   <h2 class="sidebar-heading">{{ site.title | escape }}</h2>
   <p>{{- site.description | escape -}}</p>
-  <div class="left-nav">
-
-    {{page_paths}}
-
+  <div id="left-nav">
     <ul>
       {%- for path in default_paths -%}
         {%- assign my_page = site.pages | where: "path", path.name | first | default: path -%}

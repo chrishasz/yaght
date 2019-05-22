@@ -94,9 +94,17 @@ aside {
   display: table-cell;
 }
 
- #left-nav{
+#left-nav{
   display:table-cell;
   width: 350px;
+
+  a{
+    color: $brand-color;
+
+    &:visited {
+      color: $brand-color;
+    }
+  }
 
   h3{
     margin-left: 20px;
@@ -118,6 +126,49 @@ aside {
 .home{
   background-color: #fff;
   margin-left: 320px;
+}
+
+
+/*************************** Posts **************************/
+
+.post-header {
+  margin-bottom: $spacing-unit;
+  margin-top: $spacing-unit;
+}
+
+/************************ Project Page **********************/
+
+.project-header{
+  margin-top: 15px;
+}
+
+.project-details{
+  display: flex;
+  justify-content: space-evenly;
+
+  >div{
+    height: 100px;
+    width: 100px;
+  }
+
+  a{
+    display:block;
+    text-align: center;
+  }
+
+  div{
+    background-color: $grey-color;
+  }
+
+  span{
+    background-color: $grey-color;
+    display: block;
+    text-align: center;
+  }
+
+  svg{
+    fill: $background-color;
+  }
 }
 
 /************************ RESPOND **********************/

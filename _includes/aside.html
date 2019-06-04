@@ -12,7 +12,7 @@
       {%- for path in default_paths -%}
         {%- assign my_page = site.pages | where: "path", path.name | first | default: path -%}
 
-        {%- if my_page.title && site.header_pages -%}
+        {%- if my_page.title and site.header_pages != nil -%}
           <li class="page-link"> <a href="{{ my_page.url }}">{{ my_page.title | escape }}</a></li>
         {%- else -%}
           {%- if my_page.title -%}
@@ -24,6 +24,11 @@
         {%- endif -%}
       {%- endfor -%}
     </ul>
+
+    <div>
+        {{site.header_page2s}}
+    </div>
+
   </div>
   <div class="social-links">
     {%- include social.html -%}

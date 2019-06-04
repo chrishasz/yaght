@@ -3,9 +3,9 @@
   {%- assign titles_size = default_paths | size -%}
 
   <a class="site-title img-circle" rel="author" href="{{ '/' | relative_url }}">
-    {% avatar {{site.minima.social_links.github]}} size=150 %}
+    {% avatar {{github.owner_name | default: site.minima.social_links.github]}} size=150 %}
   </a>
-  <h2 class="sidebar-heading">{{ site.title | escape }}</h2>
+  <h1 class="sidebar-heading">{{ site.title | escape }}</h1>
   <p>{{- site.description | escape -}}</p>
   <div id="left-nav">
     <ul>

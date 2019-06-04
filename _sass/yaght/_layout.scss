@@ -142,27 +142,33 @@ aside {
   margin-top: 15px;
 }
 
-.project-details{
+.project-detail-list{
   display: flex;
+  height: 170px;
   justify-content: space-evenly;
+  padding-top: 15px;
 
-  >div{
+  .project-detail-item{
     height: 100px;
     width: 100px;
   }
 
   a{
     display:block;
+    height: 100px;
+    padding-top: 24px;
     text-align: center;
   }
 
-  div{
+  .circle{
     background-color: $grey-color;
+    width: 100px;
+    height: 100px;
   }
 
   span{
-    background-color: $grey-color;
     display: block;
+    padding-top: 10px;
     text-align: center;
   }
 

@@ -70,6 +70,11 @@ minima:
 #     title : About Page 2
 #     url : /about2
 
+# blog settings
+permalink: "/blog/:year/:month/:day/:title.html"
+# paginate: 20
+# paginate_path: "/blog/page:num/"
+
 
 # technical settings
 baseurl: "yaght" # the subpath of your site, e.g. /blog
@@ -91,7 +96,7 @@ plugins:
 # toc:
 #   - title: General
 #   - url: /site/general
-#     subfolderItems:
+#     subfolderitems:
 #       - title: Configuration Options
 #         url: /site/general/config-options
 exclude: [vendor]

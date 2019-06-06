@@ -9,12 +9,14 @@
     {%- else -%}
       <h3>{{ my_page.title }}</h3>
     {%- endif -%}
-    <ul class="nav-container">
-        {% for entry in my_page.subfolderitems %}
-          <li class="nav-item">
-            <a class="page-link" href="{{ entry.url | relative_url }}">{{ entry.title }}</a>
-          </li>
-        {% endfor %}
-    </ul>
+    {% if my_page.subfolderitems %}
+      <ul class="nav-container">
+          {% for entry in my_page.subfolderitems %}
+            <li class="nav-item">
+              <a class="page-link" href="{{ entry.url | relative_url }}">{{ entry.title }}</a>
+            </li>
+          {% endfor %}
+      </ul>
+    {% endif %}
   {%- endfor -%}
 </div>

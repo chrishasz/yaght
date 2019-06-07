@@ -6,7 +6,7 @@ a {
   }
 
   &:hover {
-    color: lighten($anchor-color, 25%);;
+    color: lighten($anchor-color, 15%);;
     text-decoration: none;
   }
 }
@@ -44,24 +44,36 @@ h1, h2, h3, h4 {
 /**
  * UTILITY
  */
- .button{
-   border-radius: 8px;
-   display: block;
-   height: 25px;
-   text-align: center;
-   width: 150px;
- }
+.button{
+  background-color: $button-color;
+  border-radius: 8px;
+  color: #fff;
+  display: block;
+  height: 25px;
+  margin: 10px 0;
+  text-align: center;
+  width: 150px;
 
- .button.medium{
-   height: 35px;
-   padding-top: 10px;
-   width: 200;
- }
+  &:hover{
+    background-color: lighten($button-color, 15%);
+    color: #fff;
+  }
+}
 
- .button.large{
+.button.medium{
+  height: 35px;
+  padding-top: 10px;
+  min-width: 200px;
+}
+
+.button.large{
   height: 45px;
   padding-top: 15px;
-  width: 300;
+  min-width: 300px;
+}
+
+.button.wide{
+  width: 400px;
 }
 
 .center{

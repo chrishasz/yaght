@@ -77,26 +77,15 @@ permalink: "/blog/:year/:month/:day/:title.html"
 
 
 # technical settings
-baseurl: "yaght" # the subpath of your site, e.g. /blog
+baseurl: "" #"yaght" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-# theme: yaght
-
 plugins:
  - jekyll-avatar
  - jekyll-feed
- - jekyll-seo-tag
  - jekyll-octicons
+ - jekyll-paginate
+ - jekyll-seo-tag
 
-
-# sample schema for toc file
-# toc filename: \_data\navigation.yml
-# accessed via:  site.data.navigation.toc
-# toc:
-#   - title: General
-#   - url: /site/general
-#     subfolderitems:
-#       - title: Configuration Options
-#         url: /site/general/config-options
 exclude: [vendor]

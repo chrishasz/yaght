@@ -4,6 +4,6 @@ source "https://rubygems.org"
 gemspec
 
 gem 'jekyll-avatar'
+gem 'jekyll-feed'
 gem 'jekyll-octicons'
 gem 'jekyll-paginate'
-gem 'jekyll-sitemap'

@@ -2,11 +2,32 @@
 
 *Yet another Github Template* is a Github-friendly personal Jekyll theme for developers, based on the default [minima](https://github.com/jekyll/minima) theme.
 
-
 ## plugins
-- [jekyll-avatar](https://github.com/benbalter/jekyll-avatar)
 
-# minima
+- [jekyll-avatar](https://github.com/benbalter/jekyll-avatar)
+- [jekyll-feed](https://github.com/jekyll/jekyll-feed)
+- [jekyll-octicons](https://github.com/primer/jekyll-octicons)
+- [jekyll-paginate](https://jekyllrb.com/docs/pagination/)
+
+jekyll-octicons'
+gem 'jekyll-paginate'
+gem 'jekyll-sitemap'
+
+## Table of Contents Support
+sample schema for toc file
+toc filename: \_data\navigation.yml
+accessed via:  site.data.navigation.toc
+
+``` yml
+toc:
+ - title: General
+ - url: /site/general
+   subfolderitems:
+    - title: Configuration Options
+      url: /site/general/config-options
+```
+
+## minima
 
 *Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
 

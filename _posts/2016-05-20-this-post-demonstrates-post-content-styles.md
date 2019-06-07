@@ -77,7 +77,13 @@ In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla e
 3. Third item, what what?!
 4. Fourth item, fo sheezy my neezy
 
+## We also support buttons
 
+Here is an example of a button using Markdown links
+[small button](#){:.button .small}
+[medium button](#){:.button .medium}
+[large button](#){:.button .large}
+[centered medium button](#){:.button .medium .center}
 
 ## Headings are cool! (h2)
 

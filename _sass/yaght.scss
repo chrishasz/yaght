@@ -6,14 +6,15 @@ $orange-color:          #f66a0a !default;
 $table-text-align:        left !default;
 
 // Width of the content area
-$content-width:    1100px !default;
+$content-width:           1100px !default;
 
-$on-palm:          600px !default;
-$on-laptop:        1100px !default;
+$on-palm:                 600px !default;
+$on-laptop:               1100px !default;
 
-$on-medium:        $on-palm !default;
-$on-large:         $on-laptop !default;
+$on-medium:               $on-palm !default;
+$on-large:                $on-laptop !default;
 
 // Custom Properties
 $anchor-color:          #007891 !default;
 $anchor-color-hover:      lighten(#007891, 25%) !default;
+$button-color:          #007891 !default;

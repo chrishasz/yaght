@@ -8,6 +8,7 @@
 - [jekyll-feed](https://github.com/jekyll/jekyll-feed)
 - [jekyll-octicons](https://github.com/primer/jekyll-octicons)
 - [jekyll-paginate](https://jekyllrb.com/docs/pagination/)
+- [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
 
 jekyll-octicons'
 gem 'jekyll-paginate'

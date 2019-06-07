@@ -58,6 +58,10 @@ h1, h2, h3, h4 {
     background-color: lighten($button-color, 15%);
     color: #fff;
   }
+
+  &:visited{
+    color: #fff;
+  }
 }
 
 .button.medium{

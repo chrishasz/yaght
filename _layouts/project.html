@@ -27,7 +27,7 @@ layout: default
     </div>
     <div class="project-detail-item">
       <div class="circle">
-        <a href="{{site.github.latest_release | default: page.url}}" target="_blank">
+        <a href="{{site.github.latest_release.url | default: page.url}}" target="_blank">
           {% octicon tag height:52 class:"right left" aria-label:Release %}
         </a>
       </div>

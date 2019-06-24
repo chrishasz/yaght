@@ -16,5 +16,6 @@ $on-large:                $on-laptop !default;
 
 // Custom Properties
 $anchor-color:          #007891 !default;
-$anchor-color-hover:      lighten(#007891, 25%) !default;
+$anchor-color-hover:      lighten($anchor-color, 25%) !default;
+$anchor-color-visited:    lighten($anchor-color, 5%);
 $button-color:          #007891 !default;

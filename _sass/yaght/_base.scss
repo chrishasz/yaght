@@ -1,13 +1,13 @@
 a {
   color: $anchor-color;
 
-  &:visited {
-    color: lighten($anchor-color, 5%);
+  &:hover {
+    color: $anchor-color-hover;
+    text-decoration: none;
   }
 
-  &:hover {
-    color: lighten($anchor-color, 15%);;
-    text-decoration: none;
+  &:visited {
+    color: $anchor-color-visited;
   }
 }
 

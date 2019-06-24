@@ -77,9 +77,26 @@ aside {
     width: 150px;
   }
 
-  .sidebar-heading{
-    margin-top: 30px;
-    text-align: center;
+  &.sidebar{
+
+    #left-nav{
+      a {
+        color: $brand-color;
+
+        &:hover {
+          color: $brand-color;
+        }
+
+        &:visited {
+          color: $brand-color;
+        }
+      }
+    }
+
+    .sidebar-heading{
+      margin-top: 30px;
+      text-align: center;
+    }
   }
 
   .social-links{
@@ -99,10 +116,14 @@ aside {
   width: 350px;
 
   a{
-    color: $brand-color;
+    color: $anchor-color;
+
+    &:hover{
+      color: $anchor-color-hover
+    }
 
     &:visited {
-      color: $brand-color;
+      color: $anchor-color-visited;
     }
   }
 

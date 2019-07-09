@@ -9,30 +9,24 @@ layout: default
   </header>
 
   <div class="project-detail-list">
-    <div class="project-detail-item">
-      <div class="circle">
-        <a href="{{site.github.repository_url | default: page.url}}" target="_blank">
-          {% octicon code height:50 class:"right left" aria-label:Code %}
-        </a>
+    <a href="{{site.github.repository_url | default: page.url}}" target="_blank">
+      <div class="project-detail-item">
+        {% octicon code height:50 class:"right left" aria-label:Code %}
+        <span>Code</span>
       </div>
-      <span>Code</span>
-    </div>
-    <div class="project-detail-item">
-      <div class="circle">
-        <a href="{{site.github.issues_url | default: page.url}}" target="_blank">
-          {% octicon issue-opened height:50 class:"right left" aria-label:Issues %}
-        </a>
+    </a>
+    <a href="{{site.github.issues_url | default: page.url}}" target="_blank">
+      <div class="project-detail-item">
+        {% octicon issue-opened height:50 class:"right left" aria-label:Issues %}
+        <span>Issues</span>
       </div>
-      <span>Issues</span>
-    </div>
-    <div class="project-detail-item">
-      <div class="circle">
-        <a href="{{site.github.latest_release.url | default: page.url}}" target="_blank">
-          {% octicon tag height:52 class:"right left" aria-label:Release %}
-        </a>
+    </a>
+    <a href="{{site.github.latest_release.url | default: page.html_url}}" target="_blank">
+      <div class="project-detail-item">
+        {% octicon tag height:52 class:"right left" aria-label:Release %}
+        <span>Latest Release</span>
       </div>
-      <span>Latest Release</span>
-    </div>
+    </a>
   </div>
 
   <div class="project-content">

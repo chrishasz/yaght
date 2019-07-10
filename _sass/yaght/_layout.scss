@@ -166,8 +166,7 @@ aside {
 .project-detail-list{
   display: flex;
   justify-content: space-evenly;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 35px 0;
 
   .project-detail-item{
     border-bottom: 2px solid $brand-color;

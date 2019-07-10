@@ -11,7 +11,14 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
+
+      <div class="breadcrumb-container">
+          <span class="breadcrumb-home"><a href="{{ '/' | relative_url }}">Home</a></span> \
+          <span class="breadcrumb-current">{{ page.title }}</span>
+      </div>
+
         {{ content }}
+
       </div>
     </main>
 

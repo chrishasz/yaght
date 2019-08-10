@@ -2,19 +2,40 @@
 
 *Yet another Github Template* is a Github-friendly personal Jekyll theme for developers, based on the default [minima](https://github.com/jekyll/minima) theme.
 
-## plugins
+I built yaght with a goal of simplifying the process, for developers, of getting a personal site off the ground. Basic things like multiple page templates to control the layout, to critical SEO optimization for reach, and automated integration with Github. 
 
-- [jekyll-avatar](https://github.com/benbalter/jekyll-avatar)
-- [jekyll-feed](https://github.com/jekyll/jekyll-feed)
-- [jekyll-octicons](https://github.com/primer/jekyll-octicons)
-- [jekyll-paginate](https://jekyllrb.com/docs/pagination/)
-- [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
+## Features
+- SEO
+- Semantic HTML
+- Enhanced blogging
+- GitHub integration
 
-jekyll-octicons'
-gem 'jekyll-paginate'
-gem 'jekyll-sitemap'
+
+## Contributed properties
+
+### Site
+
+#### header_pages
+
+``` yml
+header_pages:
+ - name: about.md
+    title: About Page
+    url: /about
+ - name: about2.md
+    title: About Page 2
+    url: /about2
+```
+
+### Page
+
+#### page.hideBreadcrumb
+
+*default: false*
+Set this to true to prevent the breadcrumb control from rendering on this page.
 
 ## Table of Contents Support
+
 sample schema for toc file
 toc filename: \_data\navigation.yml
 accessed via:  site.data.navigation.toc
@@ -28,34 +49,17 @@ toc:
       url: /site/general/config-options
 ```
 
-## minima
+## Running Locally
 
-*Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
+## plugins
 
-***Disclaimer:** The information here may vary depending on the version you're using. Please refer to the `README.md` bundled
-within the theme-gem for information specific to your version or by pointing your browser to the Git tag corresponding to your
-version. e.g. https://github.com/jekyll/minima/blob/v2.5.0/README.md*  
-*Running `bundle show minima` will provide you with the local path to your current theme version.*
+- [jekyll-avatar](https://github.com/benbalter/jekyll-avatar)
+- [jekyll-feed](https://github.com/jekyll/jekyll-feed)
+- [jekyll-octicons](https://github.com/primer/jekyll-octicons)
+- [jekyll-paginate](https://jekyllrb.com/docs/pagination/)
+- [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
 
-
-[Theme preview](https://jekyll.github.io/minima/)
-
-![minima theme preview](/screenshot.png)
-
-## Installation
-
-Add this line to your Jekyll site's Gemfile:
-
-```ruby
-gem "minima"
-```
-
-And then execute:
-
-    $ bundle
-
-
-## Contents At-A-Glance
+## Original Minima Components and Features
 
 Minima has been scaffolded by the `jekyll new-theme` command and therefore has all the necessary files and directories to have a new Jekyll site up and running with zero-configuration.
 

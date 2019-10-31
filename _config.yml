@@ -61,7 +61,7 @@ minima:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-# header_pages:
+  header_pages:
   - name : about.md
     title : About Page
     url : /about
@@ -87,5 +87,6 @@ plugins:
  - jekyll-octicons
  - jekyll-paginate
  - jekyll-seo-tag
+ - jekyll-sitemap
 
 exclude: [vendor]

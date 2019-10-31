@@ -5,3 +5,8 @@ _site
 *.gem
 
 .vscode/
+
+# jekyll content
+_posts
+category
+/index.md

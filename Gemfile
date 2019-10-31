@@ -9,6 +9,7 @@ gem 'jekyll-gist'
 gem 'jekyll-octicons'
 gem 'jekyll-paginate'
 gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
 
 # Prevent Polling
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?

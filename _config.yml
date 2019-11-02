@@ -61,9 +61,9 @@ plugins:
  - jekyll-avatar
  - jekyll-feed
  - jekyll-gist
- - jekyll-octicons
  - jekyll-paginate
  - jekyll-seo-tag
  - jekyll-sitemap
+ - jemoji
 
 exclude: [vendor]

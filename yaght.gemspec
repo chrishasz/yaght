@@ -16,12 +16,12 @@ Gem::Specification.new do |spec|
     f.match(%r!^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
   end
 
-  spec.add_runtime_dependency "jekyll", ">= 3.5", "< 5.0"
-  spec.add_runtime_dependency "jekyll-feed", "~> 0.9"
+  spec.add_runtime_dependency "jekyll", ">= 3.8.5", "< 5.0"
+  spec.add_runtime_dependency "jekyll-feed", "~> 0.11"
   spec.add_runtime_dependency "jekyll-avatar", "~> 0.6"
-  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.1"
+  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.5.0"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.2.0"
-  spec.add_runtime_dependency "jekyll-octicons", "~> 8.5"
+  spec.add_runtime_dependency "jemoji", "~> 0.10.2"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"

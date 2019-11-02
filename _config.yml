@@ -1,5 +1,6 @@
 #SEO Tagging [jekyll-seo-tag]
 title: Chris Hasz
+author: Chris Hasz
 email: chrishasz@gmail.com
 description: >- 
   I build Enterprise software teams at SAP SalesCloud, and also open source projects. #EnterpriseTwitter
@@ -39,16 +40,16 @@ minima:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-header_pages:
-  - name : spgo.md
-    title : SPGo
-    url : /spgo
-  - name : glob2caml.md
-    title : Glob2Caml
-    url : /glob2caml
-  - name : yaght.md
-    title : yaght
-    url : /yaght
+# header_pages:
+#   - name : spgo
+#     title : SPGo
+#     url : /spgo
+#   - name : glob2caml
+#     title : Glob2Caml
+#     url : /glob2caml
+#   - name : yaght
+#     title : yaght
+#     url : /yaght
 
 # blog settings
 permalink: "/blog/:year/:month/:day/:title.html"

@@ -1,33 +1,29 @@
 #SEO Tagging [jekyll-seo-tag]
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
-description: > # this means to ignore newlines until "twitter_username:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-# favicon: /favicon.ico
+title: Chris Hasz
+email: chrishasz@gmail.com
+description: >- 
+  I build Enterprise software teams at SAP SalesCloud, and also open source projects. #EnterpriseTwitter
+url: "https://www.chrishasz.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/yaght"
+favicon: /images/favicon.jpg
+logo: /images/favicon.jpg
 
+# Social [jekyll-seo-tag]
+social:
+  name: chrishasz
+  links:
+    - https://twitter.com/chrishasz
+    - https://www.linkedin.com/in/chrishasz
+    - https://github.com/chrishasz
 twitter:
-  username: jekyllrb
+  username: chrishasz
   card: summary
-
-#Social [jekyll-seo-tag]
-# social:
-#   name: jekyll
-#   links:
-#     - https://twitter.com/jekyllrb
-#     - https://www.facebook.com/jekyllrb
-#     - https://www.linkedin.com/in/parkr
-#     - https://plus.google.com/+jekyll
-#     - https://github.com/jekyll
-#     - https://keybase.io/jekyllrb
 
 #blog features
 show_excerpts: true # set to true to show excerpts on the homepage
 
 #Google Analytics
-google_analytics: UA-NNNNNNNN-N
+google_analytics: UA-138720538-1
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -36,37 +32,23 @@ minima:
 
   # generate social links in footer
   social_links:
-    twitter: jekyllrb
-    github:  jekyll
+    github:  chrishasz
+    linkedin: chrishasz
+    twitter: chrishasz
     rss: rss
-    # dribbble: jekyll
-    # facebook: jekyll
-    # flickr:   jekyll
-    # instagram: jekyll
-    linkedin: parkr
-    # pinterest: jekyll
-    # youtube: jekyll
-    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    # youtube_channel_name: CloudCannon
-    # telegram: jekyll
-    # microdotblog: jekyll
-
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-# header_pages:
-#   - name : about.md
-#     title : About Page
-#     url : /about
-#   - name : about2.md
-#     title : About Page 2
-#     url : /about2
+header_pages:
+  - name : spgo.md
+    title : SPGo
+    url : /spgo
+  - name : glob2caml.md
+    title : Glob2Caml
+    url : /glob2caml
+  - name : yaght.md
+    title : yaght
+    url : /yaght
 
 # blog settings
 permalink: "/blog/:year/:month/:day/:title.html"

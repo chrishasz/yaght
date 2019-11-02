@@ -23,6 +23,8 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.2.0"
   spec.add_runtime_dependency "jemoji", "~> 0.10.2"
 
+  spec.add_runtime_dependency "jekyll-octicons", "~> 8.5"
+  
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
 end

@@ -44,22 +44,17 @@ header_pages:
   - name : spgo
     title : SPGo
     url : /spgo
-  - name : glob2caml
-    title : Glob2Caml
-    url : /glob2caml
-  - name : yaght
-    title : yaght
-    url : /yaght
+  # - name : glob2caml
+  #   title : Glob2Caml
+  #   url : /glob2caml
+  # - name : yaght
+  #   title : yaght
+  #   url : /yaght
 
 # blog settings
 permalink: "/blog/:year/:month/:day/:title.html"
 # paginate: 20
 # paginate_path: "/blog/page:num/"
-
-
-# technical settings
-baseurl: "/yaght" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 plugins:

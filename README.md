@@ -5,11 +5,11 @@
 I built yaght with a goal of simplifying the process, for developers, of getting a personal site off the ground. Basic things like multiple page templates to control the layout, to critical SEO optimization for reach, and automated integration with Github. 
 
 ## Features
+
 - SEO
 - Semantic HTML
 - Enhanced blogging
 - GitHub integration
-
 
 ## Contributed properties
 
@@ -19,10 +19,10 @@ I built yaght with a goal of simplifying the process, for developers, of getting
 
 ``` yml
 header_pages:
- - name: about.md
+  - name: about.md
     title: About Page
     url: /about
- - name: about2.md
+  - name: about2.md
     title: About Page 2
     url: /about2
 ```

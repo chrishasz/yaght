@@ -44,12 +44,12 @@ header_pages:
   - name: spgo
     title: SPGo
     url: /spgo
-# - name : glob2caml
-#    title : Glob2Caml
-  #   url : /glob2caml
-  # - name : yaght
-  #   title : yaght
-  #   url : /yaght
+  - name : glob2caml
+    title : Glob2Caml
+    url : /glob2caml
+  - name : yaght
+    title : yaght
+    url : /yaght
 
 # blog settings
 permalink: "/blog/:year/:month/:day/:title.html"

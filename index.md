@@ -1,10 +1,10 @@
 ---
-#
-# By default, content added below the "---" mark will appear in the home page
-# between the top bar and the list of recent posts.
-# To change the home page layout, edit the _layouts/home.html file.
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-#
-layout: home
-hideBreadcrumb: true
+layout: project
+title: Yaght Home
 ---
+
+Yet another Github Template (yaght) is a Github-friendly personal Jekyll theme for developers, based on the default minima theme.
+
+I built yaght with a goal of simplifying the process of getting a personal site off the ground. Basic things like multiple page templates to control the layout, to critical SEO optimization for reach, and automated integration with Github.
+
+[Getting Started with yaght](/yaght/docs/general/getting-started-with-yaght)

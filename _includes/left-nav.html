@@ -2,10 +2,18 @@
 {%- assign page_paths = site.data.navigation.toc | default: default_paths -%}
 
 <div id="left-nav">
+  <ul>
   {%- for path in page_paths -%}
     {%- assign my_page = site.pages | where: "path", path.name | first | default: path -%}
     {%- if my_page.url -%}
-      <a class="page-link" href="{{ my_page.url | relative_url }}"><h3>{{ my_page.title }}</h3></a>
+      <!-- <a class="page-link" href="{{ my_page.url | relative_url }}"><h3>{{ my_page.title }}</h3></a> -->
+      {%- if my_page.title and site.header_pages != nil -%}
+          <li class="page-link"> <a href="{{ my_page.url }}" data="{{ my_page | escape }}"><h3>{{ my_page.title | escape }}</h3></a></li>
+        {%- else -%}
+          {%- if my_page.title -%}
+            <li class="page-link"><h3><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></h3></li>
+          {%- endif -%}
+        {%- endif -%}
     {%- else -%}
       <h3>{{ my_page.title }}</h3>
     {%- endif -%}
@@ -19,4 +27,5 @@
       </ul>
     {% endif %}
   {%- endfor -%}
+  </ul>
 </div>

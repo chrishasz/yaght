@@ -7,6 +7,5 @@ _site
 .vscode/
 
 # jekyll content
-_posts
+_posts/
 category
-/index.md

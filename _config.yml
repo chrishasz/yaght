@@ -7,7 +7,6 @@ description: >-
 url: "https://www.chrishasz.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/yaght"
 favicon: /images/favicon.jpg
-logo: /images/favicon.jpg
 
 # Social [jekyll-seo-tag]
 social:

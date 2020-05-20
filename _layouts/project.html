@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-
+<div id="page-banner">
+  <div class="color-overlay"></div>
+  <img src="{{ page.image }}" alt="{{ page.header }}"/>
+  <div class="header">{{ page.header }}</div>
+</div>
 <article class="project">
 
   <header class="project-header">
@@ -21,7 +25,7 @@ layout: default
           <span>Issues</span>
         </div>
       </a>
-      <a href="{{site.github.latest_release.url | default: page.html_url}}" target="_blank">
+      <a href="{{site.github.latest_release.html_url | default: page.html_url}}" target="_blank">
         <div class="project-detail-item">
           {% octicon tag height:52 class:"right left" aria-label:Release %}
           <span>Latest Release</span>

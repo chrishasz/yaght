@@ -23,7 +23,11 @@ hideFooterDesktop : true
           </a>
         </h3>
         {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+          {%- if page.excerpt != nil -%}
+            <p>{{ page.excerpt }}</p>
+          {%- else -%}
+            {{ post.excerpt }}
+          {%- endif -%}
           <div>
             <a href="{{ post.url | relative_url }}">read more ...</a>
           </div>

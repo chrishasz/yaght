@@ -1,6 +1,7 @@
 ---
 title: "Home"
 layout: default
+hideBreadcrumb : true
 hideHeaderDesktop : true
 hideFooterDesktop : true
 ---
@@ -23,11 +24,7 @@ hideFooterDesktop : true
           </a>
         </h3>
         {%- if site.show_excerpts -%}
-          {%- if page.excerpt != nil -%}
-            <p>{{ page.excerpt }}</p>
-          {%- else -%}
-            {{ post.excerpt }}
-          {%- endif -%}
+          {{ post.excerpt }}
           <div>
             <a href="{{ post.url | relative_url }}">read more ...</a>
           </div>

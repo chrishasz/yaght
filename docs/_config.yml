@@ -1,0 +1,67 @@
+#SEO Tagging [jekyll-seo-tag]
+title: Chris Hasz
+author: Chris Hasz
+email: chrishasz@gmail.com
+description: >- 
+  I build Enterprise software teams at SAP SalesCloud, and also open source projects. #EnterpriseTwitter
+url: "https://www.chrishasz.com" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: ""
+favicon: /images/favicon.jpg
+
+# Social [jekyll-seo-tag]
+social:
+  name: chrishasz
+  links:
+    - https://twitter.com/chrishasz
+    - https://www.linkedin.com/in/chrishasz
+    - https://github.com/chrishasz
+twitter:
+  username: chrishasz
+  card: summary
+
+#blog features
+show_excerpts: true # set to true to show excerpts on the homepage
+
+#Google Analytics
+google_analytics: UA-138720538-1
+
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+  # generate social links in footer
+  social_links:
+    github:  chrishasz
+    linkedin: chrishasz
+    twitter: chrishasz
+    rss: rss
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+  - name: spgo
+    title: SPGo
+    url: /spgo
+  - name : glob2caml
+    title : Glob2Caml
+    url : /glob2caml
+  - name : yaght
+    title : yaght
+    url : /yaght
+
+# blog settings
+permalink: "/blog/:year/:month/:day/:title.html"
+# paginate: 20
+# paginate_path: "/blog/page:num/"
+
+# Build settings
+plugins:
+ - jekyll-avatar
+ - jekyll-feed
+ - jekyll-gist
+ - jekyll-octicons
+ - jekyll-paginate
+ - jekyll-seo-tag
+
+exclude: [vendor]

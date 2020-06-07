@@ -6,6 +6,9 @@ _site
 
 .vscode/
 
-# jekyll content
+# Jekyll content
+index.md
 _posts/
 category
+/_config.yml
+/index.md

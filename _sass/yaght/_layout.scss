@@ -9,6 +9,7 @@ body {
   padding: 0;
 }
 
+/************************ Site Header ***********************/
 .site-header{
   background-color: $grey-color-light;
   border-top: none;
@@ -104,9 +105,41 @@ aside {
   }
 }
 
-/**
- * left-nav
- */
+#page-banner{
+  width: 100%;
+  min-width: 400px;
+  overflow: hidden;
+  position: relative;
+
+  .color-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(32,26,22,.7);
+    z-index: 99;
+  }
+
+  .header{
+    color: #fff;
+    font-size: 86px;
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align:center;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  img{
+    width: 100%;
+  }
+}
+
+/************************** left-nav ************************/
 #left-nav ~ .post{
   display: table-cell;
 }

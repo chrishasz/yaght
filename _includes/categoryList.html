@@ -2,7 +2,7 @@
 <div id="categoryListControl" class="vertical">
 {% else %}
 <div id="categoryListControl">
-{% end %}
+{% endif %}
     {% assign sortedCategories = page.categories | sort %}
     {% for category in sortedCategories %}
     <span class="categoryItem">

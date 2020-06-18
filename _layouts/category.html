@@ -1,20 +1,28 @@
 ---
 layout: default
 ---
+<div id="left-nav">
+  {%- include siteCategoryList.html -%}
+</div>
 
-<div class="blog list">
-    <h1>Filed Under <small>#{{ page.category }}</small></h1>
+<div class="home">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  {{ content }}
 
     <ul class="post-list">
         {%- for post in site.categories[page.category] -%}
         <li>
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
             <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <h3>
+            <h2>
                 <a class="post-link" href="{{ post.url | relative_url }}">
                     {{ post.title | escape }}
                 </a>
-            </h3>
+            </h2>
             {%- if site.show_excerpts -%}
             {{ post.excerpt }}
             <div>

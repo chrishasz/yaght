@@ -1,0 +1,33 @@
+<div id="siteCategoryListControl" class="vertical">
+  {% assign categories_list = site.categories %}
+    {% if categories_list.first[0] == null %}
+      {% for category in categories_list %}
+      <h2>Categories</h2>
+      <ul>
+        <li>
+          {% if include.local_link %}
+          <a href="#{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
+          {% else %}
+          <a href="{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' | prepend: "/category/" | relative_url }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+    <h2>Categories</h2>
+    <ul>
+      {% for category in categories_list %}
+      <li>
+        {% if include.local_link %}
+        <a href="#{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
+        {% else %}
+        <a href="{{category[0] | downcase | url_escape | strip | replace: ' ', '-' | prepend: "/category/"| relative_url }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  {% assign categories_list = nil %}
+  </ul>
+</div>
+

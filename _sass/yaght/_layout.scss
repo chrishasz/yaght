@@ -50,9 +50,9 @@ body {
 aside {
   background-color: $grey-color-light;
   bottom: 0;
+  display: table-cell;
   margin: 0 auto;
   padding: 30px 20px 20px 20px;
-  position: fixed;
   top: 15px;
   width: 260px;
 
@@ -81,6 +81,8 @@ aside {
   &.sidebar{
 
     #left-nav{
+      display: table-cell;
+
       a {
         color: $brand-color;
 
@@ -146,7 +148,7 @@ aside {
 
 #left-nav{
   display:table-cell;
-  width: 350px;
+  width: 280px;
 
   a{
     color: $anchor-color;
@@ -180,7 +182,9 @@ aside {
 
 .home{
   background-color: #fff;
+  display: table-cell;
   margin-left: 320px;
+  padding-left: 30px;
 }
 
 

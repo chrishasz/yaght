@@ -1,11 +1,12 @@
 ---
 layout: default
 ---
+
 <div id="left-nav">
   {%- include siteCategoryList.html -%}
 </div>
 
-<div class="home">
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
@@ -13,23 +14,23 @@ layout: default
 
   {{ content }}
 
-    <ul class="post-list">
-        {%- for post in site.categories[page.category] -%}
-        <li>
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <h2>
-                <a class="post-link" href="{{ post.url | relative_url }}">
-                    {{ post.title | escape }}
-                </a>
-            </h2>
-            {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-            <div>
-                <a href="{{ post.url | relative_url }}">read more ...</a>
-            </div>
-            {%- endif -%}
-        </li>
-        {%- endfor -%}
-    </ul>
-</div>
+  <ul class="post-list">
+    {%- for post in site.categories[page.category] -%}
+    <li>
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h2>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+        </a>
+      </h2>
+      {%- if site.show_excerpts -%}
+      {{ post.excerpt }}
+      <div>
+        <a href="{{ post.url | relative_url }}">read more ...</a>
+      </div>
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+</article>

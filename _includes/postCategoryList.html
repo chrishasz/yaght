@@ -2,7 +2,7 @@
   {% assign sortedCategories = page.categories | sort %}
   {% for category in sortedCategories %}
   <span class="categoryItem">
-    <a href="{{ category | prepend: "/category/" | relative_url }}">#{{ category }}</a>
+    <a href="{{ category | prepend: "/category/" | relative_url | downcase }}">#{{ category }}</a>
   </span>
   {% endfor %}
 </div>

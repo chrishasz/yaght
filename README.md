@@ -2,7 +2,7 @@
 
 *Yet another Github Template* is a Github-friendly personal Jekyll theme for developers, based on the default [minima](https://github.com/jekyll/minima) theme.
 
-I built yaght with a goal of simplifying the process, for developers, of getting a personal site off the ground. Basic things like multiple page templates to control the layout, to critical SEO optimization for reach, and automated integration with Github. 
+I built yaght with a goal of simplifying the process, for developers, of getting a personal site off the ground. Basic things like multiple page templates to control the layout, to critical SEO optimization for reach, and automated integration with Github.
 
 ## Features
 
@@ -38,7 +38,7 @@ Set this to true to prevent the breadcrumb control from rendering on this page.
 
 sample schema for toc file
 toc filename: \_data\navigation.yml
-accessed via:  site.data.navigation.toc
+accessed via:  site.data.toc
 
 ``` yml
 toc:

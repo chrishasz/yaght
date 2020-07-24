@@ -1,0 +1,65 @@
+---
+layout: default
+title: "Blog Home"
+---
+
+<div id="left-nav">
+  {%- include siteCategoryList.html -%}
+</div>
+
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  {%- if site.posts.size > 0 -%}
+  <ul class="post-list">
+    {%- for post in paginator.posts limit:3 -%}
+    <li>
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h3>
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        {{ post.title | escape }}
+      </a>
+      </h3>
+      {%- if site.show_excerpts -%}
+      {{ post.excerpt }}
+      <div>
+        <a href="{{ post.url | relative_url }}">read more ...</a>
+      </div>
+      {%- endif -%}
+    </li>
+  {%- endfor -%}
+  </ul>
+
+  <!-- Pagination links -->
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ 'blog' | relative_url }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+  </div>
+  {% endif %}
+
+  {%- endif -%}
+</article>

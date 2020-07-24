@@ -1,5 +1,5 @@
 {%- assign default_paths = site.header_pages | default: site.pages  -%}
-{%- assign page_paths = site.data.toc | default: default_paths -%}
+{%- assign page_paths = site.data.navigation.toc | default: default_paths -%}
 
 <div id="left-nav">
   <ul>

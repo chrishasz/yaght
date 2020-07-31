@@ -14,7 +14,7 @@
 
         {%- unless layout.hideBreadcrumb == true -%}
           <div class="breadcrumb-container">
-              <span class="breadcrumb-home"><a href="{{ '/' | relative_url }}">Home</a></span> \
+              <span class="breadcrumb-home"><a href="{{ '/' | relative_url }}">{{ site.title}}</a></span> \
               <span class="breadcrumb-current">{{ page.title }}</span>
           </div>
         {%- endunless -%}

@@ -1,12 +1,16 @@
+# jekyll related files and folders
+_site/
 .bundle
-.sass-cache
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 Gemfile.lock
-_site
 *.gem
 
+# vscode related folders
 .vscode/
 
-# Jekyll content
+# local test content
 index.md
 _posts/
 category

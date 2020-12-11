@@ -144,6 +144,7 @@ aside {
 /************************** left-nav ************************/
 #left-nav ~ .post{
   display: table-cell;
+  max-width: 780px;
 
   @include media-query($on-palm) {
     display: block;

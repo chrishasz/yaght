@@ -13,8 +13,9 @@
       <div class="wrapper">
 
         {%- unless layout.hideBreadcrumb == true -%}
+        {%- assign breadcrumb_title = site.subtitle | default: site.title -%}
           <div class="breadcrumb-container">
-              <span class="breadcrumb-home"><a href="{{ '/' | relative_url }}">{{ site.title}}</a></span> \
+              <span class="breadcrumb-home"><a href="{{ '/' | relative_url }}">{{ breadcrumb_title }}</a></span> \
               <span class="breadcrumb-current">{{ page.title }}</span>
           </div>
         {%- endunless -%}

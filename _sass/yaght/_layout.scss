@@ -108,6 +108,7 @@ aside {
 }
 
 #page-banner{
+  background-color: $brand-color;
   width: 100%;
   min-width: 400px;
   overflow: hidden;
@@ -125,12 +126,8 @@ aside {
 
   .header{
     color: #fff;
-    font-size: 86px;
+    font-size: 78px;
     z-index: 100;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
     text-align:center;
     width: 70%;
     margin: 0 auto;

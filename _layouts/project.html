@@ -2,9 +2,14 @@
 layout: default
 ---
 <div id="page-banner">
+  {%- if page.image -%}
   <div class="color-overlay"></div>
   <img src="{{ page.image }}" alt="{{ page.header }}"/>
+  <div class="header absolute">{{ page.header }}</div>
+  {%- else -%}
   <div class="header">{{ page.header }}</div>
+  {%- endif -%}
+
 </div>
 <article class="project">
 

@@ -150,7 +150,7 @@ aside {
 
 #left-nav{
   display:table-cell;
-  width: 280px;
+  min-width: 280px;
 
   a{
     color: $anchor-color;

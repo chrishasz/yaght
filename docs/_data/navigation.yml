@@ -1,0 +1,14 @@
+toc:
+ - title: General
+   name: general.md
+   subfolderitems:
+    - name: config-options.md
+      title: Configuration Options
+      url: /general/config-options
+    - title: Getting Started with Yaght
+      url: /general/getting-started-with-yaght
+    - title: Configuring Navigation
+      url: /general/navigation
+    - title: Working with Minima
+      url: /general/working-with-minima
+

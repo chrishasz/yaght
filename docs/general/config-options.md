@@ -5,14 +5,17 @@ title: Configuration Options
 
 ## Contributed properties
 
-### Page Level
+Configuration properties above and beyond the base minima properties have been defined at the [site](#site) and [page](#page) level
 
-The following properties can be individually set on each page.
+### Site Level [#](#site){:name="site"}
 
-#### page.hideBreadcrumb
+The following proprties are configured in the `_config.yml` file.
 
-*default: false*
-Set this to true to prevent the breadcrumb control from rendering on this page.
+#### Subtitle
+
+```yaml
+subtitle:
+```
 
 #### header_pages
 
@@ -25,3 +28,12 @@ header_pages:
     title: About Page 2
     url: /about2
 ```
+
+### Page Level [#](#page){:name="page"}
+
+The following properties can be individually set on each page by editing the `front matter` section.
+
+#### page.hideBreadcrumb
+
+*default: false*
+Set this to true to prevent the breadcrumb control from rendering on this page.

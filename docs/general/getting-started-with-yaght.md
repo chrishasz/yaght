@@ -15,5 +15,4 @@ title: Getting Started with yaght
 remote_theme: chrishasz/yaght
 ```
 
-
 ## Running Yaght locally

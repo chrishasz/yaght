@@ -14,7 +14,7 @@ The following proprties are configured in the `_config.yml` file.
 #### Subtitle
 
 ```yaml
-subtitle:
+subtitle: Your Subtitle
 ```
 
 #### header_pages

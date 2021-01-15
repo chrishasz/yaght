@@ -9,10 +9,10 @@ Minima has been scaffolded by the `jekyll new-theme` command and therefore has a
 
 Refers to files within the `_layouts` directory, that define the markup for your theme.
 
-- `default.html` &mdash; The base layout that lays the foundation for subsequent layouts. The derived layouts inject their contents into this file at the line that says ` {{ content }} ` and are linked to this file via [FrontMatter](https://jekyllrb.com/docs/frontmatter/) declaration `layout: default`.
-- `home.html` &mdash; The layout for your landing-page / home-page / index-page. [[More Info.](#home-layout)]
-- `page.html` &mdash; The layout for your documents that contain FrontMatter, but are not posts.
-- `post.html` &mdash; The layout for your posts.
+- `default.html` - The base layout that lays the foundation for subsequent layouts. The derived layouts inject their contents into this file at the line that says ` {{ content }} ` and are linked to this file via [FrontMatter](https://jekyllrb.com/docs/frontmatter/) declaration `layout: default`.
+- `home.html` - The layout for your landing-page / home-page / index-page. [[More Info.](#home-layout)]
+- `page.html` - The layout for your documents that contain FrontMatter, but are not posts.
+- `post.html` - The layout for your posts.
 
 #### Home Layout
 
@@ -26,7 +26,7 @@ Usually the `site.title` itself would suffice as the implicit 'main-title' for a
 
 ##### *Post Listing*
 
-This section is optional from Minima v2.2 onwards.<br/>
+This section is optional from Minima v2.2 onwards.
 It will be automatically included only when your site contains one or more valid posts or drafts (if the site is configured to `show_drafts`).
 
 The title for this section is `Posts` by default and rendered with an `<h2>` tag. You can customize this heading by defining a `list_title` variable in the document's front matter.

@@ -9,15 +9,19 @@ Configuration properties above and beyond the base minima properties have been d
 
 ### Site Level [#](#site){:name="site"}
 
-The following proprties are configured in the `_config.yml` file.
+The following properties are configured in the `_config.yml` file.
 
 #### Subtitle
+
+The `subtitle` property sets the breadcrumb root node name. If not provided, the root node will default to the `site.title" property.
 
 ```yaml
 subtitle: Your Subtitle
 ```
 
 #### header_pages
+
+The `header_pages` node is used to overwrite the default site navigation. For more information on using `header_pages`, check out [Navigation Options]{/yaght/general/navigation}.
 
 ``` yml
 header_pages:
@@ -32,6 +36,21 @@ header_pages:
 ### Page Level [#](#page){:name="page"}
 
 The following properties can be individually set on each page by editing the `front matter` section.
+
+#### page.categories
+
+*default: []*
+Assign a blog post a category. These can
+
+#### page.header
+
+*default: []*
+Assign a blog post a category. These can
+
+#### page.image
+
+*default: []*
+Assign a blog post a category. These can
 
 #### page.hideBreadcrumb
 

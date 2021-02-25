@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Yaght Home
+header: "Yaght: A Lightweight, GitHub-friendly Jekyll Theme"
 ---
 
 Yet another Github Template (yaght) is a Github-friendly personal Jekyll theme for developers, based on the default minima theme.

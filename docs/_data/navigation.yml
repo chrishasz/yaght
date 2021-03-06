@@ -8,5 +8,7 @@ toc:
       url: /general/config-options
     - title: Configuring Navigation
       url: /general/navigation
+    - title: Available Page Templates
+      url: /general/page-templates
     - title: Working with Minima
       url: /general/working-with-minima

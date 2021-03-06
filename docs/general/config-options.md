@@ -39,20 +39,27 @@ The following properties can be individually set on each page by editing the `fr
 
 #### page.categories
 
-*default: []*
-Assign a blog post a category. These can
+*default:* `[]`
+
+Assign a blog post a category. The `page.category` property can either be a single string, or a comma-separated array of strings.
 
 #### page.header
 
-*default: []*
-Assign a blog post a category. These can
+*default:* `""`
+
+The value that will display:
+
+* As an `<h1>` tag at the top of the page
+* As the title of the tab on your browser
 
 #### page.image
 
-*default: []*
-Assign a blog post a category. These can
+*default:* `""`
+
+Only available on the [Project Page](/yaght/general/page-templates) template. By default, the Project Page will display the GitHub repository image. If you want to display a different image, you can specify it here.
 
 #### page.hideBreadcrumb
 
-*default: false*
+*default:* `false`
+
 Set this to true to prevent the breadcrumb control from rendering on this page.

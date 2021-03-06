@@ -19,5 +19,7 @@ It is also the theme that powers this website.
 ### General
 
 * [_config.yml configuration options](/yaght/general/config-options)
-* [Configuring Navigation](/yaght/general/navigation)
+* [Setting up Navigation](/yaght/general/navigation)
+* [Configuration Options](/yaght/general/config-options)
+* [Available Page Templates](/yaght/general/page-templates)
 * [Working with Minima](/yaght/general/working-with-minima)

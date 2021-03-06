@@ -3,7 +3,9 @@ layout: page
 title: Working with Minima
 ---
 
-Minima has been scaffolded by the `jekyll new-theme` command and therefore has all the necessary files and directories to have a new Jekyll site up and running with zero-configuration.
+Yaght is based on the Minima theme. For information about the minima theme, see below:
+
+Minima was scaffolded by the `jekyll new-theme` command and therefore has all the necessary files and directories to have a new Jekyll site up and running with zero-configuration.
 
 ### Layouts
 

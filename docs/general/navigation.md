@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Getting Started with yaght
+title: Navigation
 ---
 
 ## Table of Contents Support

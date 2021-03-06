@@ -36,7 +36,7 @@ The following plugins are bundled with Yaght:
 
 ## Learn More
 
-You can view additional documentation [on our documentation site.](https://www.chrishasz.com/spgo/)
+You can view additional documentation [on our documentation site.](https://www.chrishasz.com/yaght/)
 
 ### How to get in touch
 
@@ -49,7 +49,7 @@ Write an email, create an issue on git, @ us on twitter or request support via S
 
 ### Issues
 
-Please submit any issues or feature requests to [https://github.com/chrishasz/SPGo/issues](https://github.com/chrishasz/SPGo/issues) or, better yet, author a pull request.
+Please submit any issues or feature requests to [https://github.com/chrishasz/yaght/issues](https://github.com/chrishasz/yaght/issues) or, better yet, author a pull request.
 
 ### Open Source
 

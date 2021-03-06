@@ -12,6 +12,8 @@ The Goal is a simple template that would automatically provide features like mul
 
 It is also the theme that powers this website.
 
+[View the Demo](/yaght-demo){:.button .medium .center target="_blank"}
+
 ## Help Topics
 
 [Getting Started with yaght](/yaght/general/getting-started-with-yaght)

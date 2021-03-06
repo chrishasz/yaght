@@ -22,7 +22,7 @@ twitter:
 
 # Custom Navigation Links
 header_pages:
-  - name : blog
+  - name : blog.md
     title : Blog
     url : /blog
   - name : spgo.md
